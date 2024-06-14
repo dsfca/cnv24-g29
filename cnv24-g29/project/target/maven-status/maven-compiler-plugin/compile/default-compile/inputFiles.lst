@@ -1,0 +1,16 @@
+/Users/daniela/Desktop/cnv_nico/cnv24-g29/project/src/main/java/cnv/g29/AWSConstants.java
+/Users/daniela/Desktop/cnv_nico/cnv24-g29/project/src/main/java/cnv/g29/AlgorithmParameters.java
+/Users/daniela/Desktop/cnv_nico/cnv24-g29/project/src/main/java/cnv/g29/DynamoDBManager.java
+/Users/daniela/Desktop/cnv_nico/cnv24-g29/project/src/main/java/cnv/g29/EC2/EC2Manager.java
+/Users/daniela/Desktop/cnv_nico/cnv24-g29/project/src/main/java/cnv/g29/EC2/EC2MeasureCPU.java
+/Users/daniela/Desktop/cnv_nico/cnv24-g29/project/src/main/java/cnv/g29/LoadBalancerAndAutoscaler/Autoscaler.java
+/Users/daniela/Desktop/cnv_nico/cnv24-g29/project/src/main/java/cnv/g29/LoadBalancerAndAutoscaler/InstanceTrackRecord.java
+/Users/daniela/Desktop/cnv_nico/cnv24-g29/project/src/main/java/cnv/g29/LoadBalancerAndAutoscaler/LBManager.java
+/Users/daniela/Desktop/cnv_nico/cnv24-g29/project/src/main/java/cnv/g29/LoadBalancerAndAutoscaler/LoadBalancer.java
+/Users/daniela/Desktop/cnv_nico/cnv24-g29/project/src/main/java/cnv/g29/LoadBalancerAndAutoscaler/LoadBalancerHandler.java
+/Users/daniela/Desktop/cnv_nico/cnv24-g29/project/src/main/java/cnv/g29/LoadBalancerAndAutoscaler/LoadBalancerWebServer.java
+/Users/daniela/Desktop/cnv_nico/cnv24-g29/project/src/main/java/cnv/g29/LoadBalancerAndAutoscaler/RequestInstanceDescriptor.java
+/Users/daniela/Desktop/cnv_nico/cnv24-g29/project/src/main/java/cnv/g29/lambda/LambdaManager.java
+/Users/daniela/Desktop/cnv_nico/cnv24-g29/project/src/main/java/cnv/g29/test/TestDynamoDB.java
+/Users/daniela/Desktop/cnv_nico/cnv24-g29/project/src/main/java/cnv/g29/test/TestEC2.java
+/Users/daniela/Desktop/cnv_nico/cnv24-g29/project/src/main/java/cnv/g29/test/TestLoadBalancer.java

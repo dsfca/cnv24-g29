@@ -1,0 +1,150 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>pt.ulisboa.tecnico.cnv</groupId>
+        <artifactId>cnv</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>org.example.test</groupId>
+    <artifactId>project</artifactId>
+    <packaging>jar</packaging>
+
+    <name>project</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <aws.java.sdk.version>2.25.45</aws.java.sdk.version>
+    </properties>
+
+    <dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>software.amazon.awssdk</groupId>
+				<artifactId>bom</artifactId>
+				<version>${aws.java.sdk.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<!-- AWS SDK Core dependency -->
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-core</artifactId>
+			<version>1.12.177</version>
+		</dependency>
+		<!-- AWS SDK CloudWatch dependency (Needed) -->
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>cloudwatch</artifactId>
+			<version>2.25.60</version>
+		</dependency>
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-ec2</artifactId>
+			<version>1.12.714</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-elasticloadbalancingv2</artifactId>
+			<version>1.12.714</version>
+		</dependency>
+
+
+		<!--        <dependency>-->
+		<!--            <groupId>software.amazon.awssdk</groupId>-->
+		<!--            <artifactId>ec2</artifactId>-->
+		<!--            <exclusions>-->
+		<!--                <exclusion>-->
+		<!--                    <groupId>software.amazon.awssdk</groupId>-->
+		<!--                    <artifactId>netty-nio-client</artifactId>-->
+		<!--                </exclusion>-->
+		<!--                <exclusion>-->
+		<!--                    <groupId>software.amazon.awssdk</groupId>-->
+		<!--                    <artifactId>apache-client</artifactId>-->
+		<!--                </exclusion>-->
+		<!--            </exclusions>-->
+		<!--        </dependency>-->
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>ec2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>elasticloadbalancingv2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>autoscaling</artifactId>
+        </dependency>
+		<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb -->
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-dynamodb</artifactId>
+            <version>1.12.719</version>
+        </dependency>
+
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>lambda</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20240303</version>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+        	<groupId>pt.ulisboa.tecnico</groupId>
+        	<artifactId>JavassistWrapper</artifactId>
+        	<version>1.0</version>
+        </dependency>
+        <dependency>
+        	<groupId>pt.ulisboa.tecnico</groupId>
+        	<artifactId>AwsDynamoWriter</artifactId>
+        	<version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.17.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>16</source>
+                    <target>16</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>
